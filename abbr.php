@@ -8,20 +8,20 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://example.com
+ * @link              http://jeanbaptisteaudras.com
  * @since             1.0.0
- * @package           Plugin_Name
+ * @package           Abbreviations
  *
  * @wordpress-plugin
- * Plugin Name:       WordPress Plugin Boilerplate
- * Plugin URI:        http://example.com/plugin-name-uri/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Plugin Name:       Abbreviations
+ * Plugin URI:        http://jeanbaptisteaudras.com/
+ * Description:       Provides abbreviations control on WordPress TinyMCE editor.
  * Version:           1.0.0
- * Author:            Your Name or Your Company
- * Author URI:        http://example.com/
+ * Author:            Jean-Baptiste Audras
+ * Author URI:        http://jeanbaptisteaudras.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       plugin-name
+ * Text Domain:       abbr
  * Domain Path:       /languages
  */
 
@@ -32,30 +32,30 @@ if ( ! defined( 'WPINC' ) ) {
 
 /**
  * The code that runs during plugin activation.
- * This action is documented in includes/class-plugin-name-activator.php
+ * This action is documented in includes/class-abbr-activator.php
  */
-function activate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-activator.php';
-	Plugin_Name_Activator::activate();
+function activate_abbr() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-abbr-activator.php';
+	abbr_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
- * This action is documented in includes/class-plugin-name-deactivator.php
+ * This action is documented in includes/class-abbr-deactivator.php
  */
-function deactivate_plugin_name() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-deactivator.php';
-	Plugin_Name_Deactivator::deactivate();
+function deactivate_abbr() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-abbr-deactivator.php';
+	abbr_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_plugin_name' );
-register_deactivation_hook( __FILE__, 'deactivate_plugin_name' );
+register_activation_hook( __FILE__, 'activate_abbr' );
+register_deactivation_hook( __FILE__, 'deactivate_abbr' );
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name.php';
+require plugin_dir_path( __FILE__ ) . 'includes/class-abbr.php';
 
 /**
  * Begins execution of the plugin.
@@ -66,10 +66,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name.php';
  *
  * @since    1.0.0
  */
-function run_plugin_name() {
+function run_abbr() {
 
-	$plugin = new Plugin_Name();
+	$plugin = new abbr();
 	$plugin->run();
 
 }
-run_plugin_name();
+run_abbr();
