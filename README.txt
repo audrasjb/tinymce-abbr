@@ -1,113 +1,52 @@
 === Plugin Name ===
 Contributors: audrasjb
-Tags: abbreviations, tinymce, visual editor
+Tags: abbreviations,tinymce,visual editor,accessibility,rgaa,section 501,wcag,Accessiweb,Opquast
 Requires at least: 3.0
 Tested up to: 4.6.1
-Stable tag: 4.6.1
-License: GPLv2 or later
+License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Here is a short description of the plugin.  This should be no more than 150 characters.  No markup here.
+Provides abbreviations button for WordPress TinyMCE visual editor.
 
 == Description ==
 
-This is the long description.  No limit, and you can use Markdown (as well as in the following sections).
+English: this plugin should be used to supply abbreviation support in the TinyMCE visual editor. Once activated, it provides an "abr" button which allows editor to indicate the meaning of each abbreviation used in Pages, Posts or any custom post types used in your WordPress installation. The markup is fully compatible with accessibility rules (WCAG, section 501, etc.). It uses <abbr /> tag instead of the deprecated <acronym /> HTML markup.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
-
-A few notes about the sections above:
-
-*   "Contributors" is a comma separated list of wp.org/wp-plugins.org usernames
-*   "Tags" is a comma separated list of tags that apply to the plugin
-*   "Requires at least" is the lowest version that the plugin will work on
-*   "Tested up to" is the highest version that you've *successfully used to test the plugin*. Note that it might work on
-higher versions... this is just the highest one you've verified.
-*   Stable tag should indicate the Subversion "tag" of the latest stable version, or "trunk," if you use `/trunk/` for
-stable.
-
-    Note that the `readme.txt` of the stable tag is the one that is considered the defining one for the plugin, so
-if the `/trunk/readme.txt` file says that the stable tag is `4.3`, then it is `/tags/4.3/readme.txt` that'll be used
-for displaying information about the plugin.  In this situation, the only thing considered from the trunk `readme.txt`
-is the stable tag pointer.  Thus, if you develop in trunk, you can update the trunk `readme.txt` to reflect changes in
-your in-development version, without having that information incorrectly disclosed about the current stable version
-that lacks those changes -- as long as the trunk's `readme.txt` points to the correct stable tag.
-
-    If no stable tag is provided, it is assumed that trunk is stable, but you should specify "trunk" if that's where
-you put the stable version, in order to eliminate any doubt.
+Français : ce plugin ajoute la gestion des abréviations dans l'éditeur visuel TinyMCE. Une fois le plugin activé, vous disposerez d'un bouton "abr" qui vous permettra d'indiquer la légende de chaque abréviation utilisée sur vos pages, vos posts ou n'importe quel type de contenu personnalisé utilisé sur votre site. Le balisage généré est pleinement compatible avec les règles d'accessibilité (notamment pour la France avec le référentiel général d'accessibilité pour les administrations ou les critères Accesiweb et Opquast). Ce plugin utilise l'élément HTML <abbr /> à la place de <acronym />, qui a été déprécié.
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+English:
+1. Upload the plugin to the '/wp-content/plugins/' directory
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Use it in your WordPress visual editor
 
-e.g.
-
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
+Français :
+1. Placez le plugin dans le répertoire "/wp-content/plugins/" de votre installation
+2. Activez le plugin dans le menu "Extensions" de votre interface d'administration
+3. Utilisez-le pour baliser vos abréviations dans l'éditeur visuel
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= English: What about next steps of this plugin development? =
 
-An answer to that question.
+Support for the lang attribute and provide an option page which allows (or not) to add a stylesheet to style the abbreviations (on the website front-end and once the page get printed).
 
-= What about foo bar? =
+= Français : Quelles sont les améliorations à venir =
 
-Answer to foo bar dilemma.
+Support de l'indication de la langue de l'abréviation et ajout d'une page d'option permettant d'ajouter (ou pas) une feuille de styles pour mettre en forme les abréviations (sur le site et lors d'une impression papier).
 
 == Screenshots ==
 
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
+1. the 'ABR' button in your TinyMCE visual editor.
+2. the popup used to provide the meaning of your abbreviation.
 
 == Changelog ==
 
 = 1.0 =
-* A change since the previous version.
-* Another change.
-
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
+* Plugin initial commit.
 
 == Upgrade Notice ==
 
 = 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above.  This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation."  Arbitrary sections will be shown below the built-in sections outlined above.
-
-== A brief Markdown Example ==
-
-Ordered list:
-
-1. Some feature
-1. Another feature
-1. Something else about the plugin
-
-Unordered list:
-
-* something
-* something else
-* third thing
-
-Here's a link to [WordPress](http://wordpress.org/ "Your favorite software") and one to [Markdown's Syntax Documentation][markdown syntax].
-Titles are optional, naturally.
-
-[markdown syntax]: http://daringfireball.net/projects/markdown/syntax
-            "Markdown is what the parser uses to process much of the readme file"
-
-Markdown uses email style notation for blockquotes and I've been told:
-> Asterisks for *emphasis*. Double it up  for **strong**.
-
-`<?php code(); // goes in backticks ?>`
+* Plugin initial commit.
