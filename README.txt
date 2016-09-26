@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: audrasjb
-Tags: abbreviations,tinymce,visual editor,accessibility,rgaa,section 501,wcag,Accessiweb,Opquast
+Tags: abbreviations,abbreviation,abréviations,abréviation,abbr,tinymce,wysiwyg,visual editor,accessibility,accessibilité,RGAA,section 501,wcag,Accessiweb,Opquast
 Requires at least: 3.0
 Tested up to: 4.6.1
 Stable tag: 1.0
@@ -11,9 +11,9 @@ Provides abbreviations button for WordPress TinyMCE visual editor.
 
 == Description ==
 
-English: this plugin should be used to supply abbreviation support in the TinyMCE visual editor. Once activated, it provides an "abr" button which allows editor to indicate the meaning of each abbreviation used in Pages, Posts or any custom post types used in your WordPress installation. The markup is fully compatible with accessibility rules (WCAG, section 501, etc.). It uses <abbr /> tag instead of the deprecated <acronym /> HTML markup.
+English: this plugin should be used to supply abbreviation support in the TinyMCE visual editor. Once activated, it provides an "ABR" button which allows editor to indicate the meaning of each abbreviation used in Pages, Posts or any custom post types used in your WordPress installation. The markup is fully compatible with accessibility rules (WCAG, section 501, etc.). It uses <abbr /> tag instead of the deprecated <acronym /> HTML markup.
 
-Français : ce plugin ajoute la gestion des abréviations dans l'éditeur visuel TinyMCE. Une fois le plugin activé, vous disposerez d'un bouton "abr" qui vous permettra d'indiquer la légende de chaque abréviation utilisée sur vos pages, vos posts ou n'importe quel type de contenu personnalisé utilisé sur votre site. Le balisage généré est pleinement compatible avec les règles d'accessibilité (notamment pour la France avec le référentiel général d'accessibilité pour les administrations ou les critères Accesiweb et Opquast). Ce plugin utilise l'élément HTML <abbr /> à la place de <acronym />, qui a été déprécié.
+Français : ce plugin ajoute la gestion des abréviations dans l'éditeur visuel TinyMCE. Une fois le plugin activé, vous disposerez d'un bouton "ABR" qui vous permettra d'indiquer la légende de chaque abréviation utilisée sur vos pages, vos posts ou n'importe quel type de contenu personnalisé utilisé sur votre site. Le balisage généré est pleinement compatible avec les règles d'accessibilité (notamment pour la France avec le référentiel général d'accessibilité pour les administrations ou les critères Accesiweb et Opquast). Ce plugin utilise l'élément HTML <abbr /> à la place de <acronym />, qui a été déprécié.
 
 **Credits**
 
