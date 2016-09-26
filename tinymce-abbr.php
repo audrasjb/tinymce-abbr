@@ -8,16 +8,16 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              http://jeanbaptisteaudras.com
+ * @link              http://jeanbaptisteaudras.com/tinymce-abbr/
  * @since             1.0.0
  * @package           Abbreviation button for TinyMCE
  *
  * @wordpress-plugin
  * Plugin Name:       Abbreviation button for TinyMCE
- * Plugin URI:        http://jeanbaptisteaudras.com/
+ * Plugin URI:        http://jeanbaptisteaudras.com/tinymce-abbr/
  * Description:       Provides abbreviations button for WordPress TinyMCE visual editor.
  * Version:           1.0.0
- * Author:            Jean-Baptiste Audras
+ * Author:            Jean-Baptiste Audras, project manager @ Whodunit
  * Author URI:        http://jeanbaptisteaudras.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -74,6 +74,7 @@ class TinyMCE_ABBR {
 	*/
 	function add_tinymce_abbr( $plugin_array ) {
 		$plugin_array['tinymce_abbr_class'] = plugin_dir_url( __FILE__ ) . 'admin/js/tinymce-abbr-class.js';
+		$plugin_array['tinymce_abbr_delete_class'] = plugin_dir_url( __FILE__ ) . 'admin/js/tinymce-abbr-delete-class.js';
 		return $plugin_array;
 	}
 	
@@ -86,6 +87,7 @@ class TinyMCE_ABBR {
 	*/
 	function add_tinymce_abbr_toolbar_button( $buttons ) {
 		array_push( $buttons, 'tinymce_abbr_class' );
+		array_push( $buttons, 'tinymce_abbr_delete_class' );
 		return $buttons;
 	}
 	

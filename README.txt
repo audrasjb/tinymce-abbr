@@ -15,17 +15,21 @@ English: this plugin should be used to supply abbreviation support in the TinyMC
 
 Français : ce plugin ajoute la gestion des abréviations dans l'éditeur visuel TinyMCE. Une fois le plugin activé, vous disposerez d'un bouton "abr" qui vous permettra d'indiquer la légende de chaque abréviation utilisée sur vos pages, vos posts ou n'importe quel type de contenu personnalisé utilisé sur votre site. Le balisage généré est pleinement compatible avec les règles d'accessibilité (notamment pour la France avec le référentiel général d'accessibilité pour les administrations ou les critères Accesiweb et Opquast). Ce plugin utilise l'élément HTML <abbr /> à la place de <acronym />, qui a été déprécié.
 
+**Credits**
+
+[Jean-Baptiste Audras](http://jeanbaptisteaudras.com/ "Jean-Baptiste Audras"), project manager at [Whodunit](http://www.whodunit.fr/ "Whodunit Web Agency") and WordPress developer. @audrasjb on [Twitter](https://twitter.com/audrasjb "@audrasjb on Twitter") or [Github](https://github.com/audrasjb "@audrasjb on Github").
+
 == Installation ==
 
 English:
 1. Upload the plugin to the '/wp-content/plugins/' directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Use it in your WordPress visual editor
+3. Use it in your WordPress visual editor with the "ABR" button
 
 Français :
 1. Placez le plugin dans le répertoire "/wp-content/plugins/" de votre installation
 2. Activez le plugin dans le menu "Extensions" de votre interface d'administration
-3. Utilisez-le pour baliser vos abréviations dans l'éditeur visuel
+3. Utilisez-le pour baliser vos abréviations dans l'éditeur visuel à l'aide du bouton "ABR"
 
 == Frequently Asked Questions ==
 
@@ -33,9 +37,9 @@ Français :
 
 Support for the lang attribute and provide an option page which allows (or not) to add a stylesheet to style the abbreviations (on the website front-end and once the page get printed).
 
-= Français : Quelles sont les améliorations à venir =
+= Français : Quelles sont les améliorations à venir ? =
 
-Support de l'indication de la langue de l'abréviation et ajout d'une page d'option permettant d'ajouter (ou pas) une feuille de styles pour mettre en forme les abréviations (sur le site et lors d'une impression papier).
+Support de l'indication de la langue de l'abréviation et ajout d'une page d'option permettant d'ajouter (ou pas) une feuille de styles pour mettre en forme les abréviations (sur le site voire lors d'une impression papier).
 
 == Screenshots ==
 
