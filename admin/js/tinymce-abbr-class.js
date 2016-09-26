@@ -9,6 +9,8 @@
 
 		// Called when we click the Insert Gistpen button
 		editor.addCommand( 'tinymce_abbr_modal', function() {
+			// Initialize abbrTitle var
+			var abbrTitle = '';
 			// Check we have selected some text that we want to link
 			var text = editor.selection.getContent({
 				'format': 'html'
@@ -18,44 +20,34 @@
 				return;
 			}
 			// Calls the pop-up modal
-			editor.windowManager.open(
-				{
-					// Modal settings
-					title: 'Insert abbreviation',
-//					file:  url + '/tinymce-abbr-dialog.html',
-					id: 'tinymce-abbr-insert-dialog',
-					buttons: 
-					[
-						{
-                   			type   : 'textbox',
-				   			name   : 'abbrTitle',
-				   			label  : 'Title',
-				   			tooltip: 'The meaning of your abbreviation',
-               			},
-               			{
-							text: 'Insert',
-							id: 'tinymce-abbr-button-insert',
-							class: 'insert',
-							onclick: function( editor, url ) {
-								tinymce_abbr_insertion(abbrTitle);
-							},
-						},
-					],
-                },
-                {
-                	editor: editor,                   //    This is a reference to the current editor. We'll need this to insert the shortcode we create.
-				}				
-			);
-
+			editor.windowManager.open({
+				// Modal settings
+				title: 'Insert abbreviation',
+				id: 'tinymce-abbr-insert-dialog',
+				buttons: [
+					{
+                   		type   : 'textbox',
+						id: 'tinymce-abbr-textbox',
+				   		name   : 'abbrTitle',
+				   		label  : 'Title',
+				   		tooltip: 'The meaning of your abbreviation',
+               		},
+               		{
+						text: 'Ok',
+						id: 'tinymce-abbr-button-insert',
+						class: 'insert',
+						onclick: function(e) {
+							var text = editor.selection.getContent({
+								'format': 'html'
+							});
+							editor.execCommand('mceReplaceContent', false, '<abbr class="abbr" title="' + jQuery('#tinymce-abbr-textbox').val() + '">' + text + '</a>');
+							editor.windowManager.close();
+						}
+					},
+				],
+			});
 		});
-
 	});
-
-	function tinymce_abbr_insertion(abbrTitle) {
-		var title = abbrTitle;
-		editor.execCommand('mceReplaceContent', false, '<abbr class="abbr" title="' + title + '">' + text + '</a>');
-	}
-
 })();
 /*
 		// Add Command when Button Clicked
