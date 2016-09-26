@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Abbreviation button for TinyMCE ===
 Contributors: audrasjb
 Tags: abbreviations,abbreviation,abréviations,abréviation,abbr,tinymce,wysiwyg,visual editor,accessibility,accessibilité,RGAA,section 501,wcag,Accessiweb,Opquast
 Requires at least: 3.0
@@ -7,7 +7,7 @@ Stable tag: 1.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Provides abbreviations button for WordPress TinyMCE visual editor.
+Provides abbreviation button for WordPress TinyMCE visual editor.
 
 == Description ==
 
