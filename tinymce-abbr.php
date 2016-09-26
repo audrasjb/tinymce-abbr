@@ -36,7 +36,6 @@ class TinyMCE_ABBR {
 	* Constructor. Called when the plugin is initialised.
 	*/
 	function __construct() {
-		
 		if ( is_admin() ) {
 			add_action( 'init', array(  $this, 'setup_tinymce_abbr' ) );
 		}
