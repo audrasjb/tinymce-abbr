@@ -1,22 +1,15 @@
 <?php
 
 /**
- * The plugin bootstrap file
- *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
- *
  * @link              http://jeanbaptisteaudras.com/tinymce-abbr/
- * @since             1.0.0
+ * @since             1.1
  * @package           Abbreviation button for TinyMCE
  *
  * @wordpress-plugin
  * Plugin Name:       Abbreviation button for TinyMCE
  * Plugin URI:        http://jeanbaptisteaudras.com/tinymce-abbr/
  * Description:       Provides abbreviations button for WordPress TinyMCE visual editor.
- * Version:           1.0.0
+ * Version:           1.1
  * Author:            Jean-Baptiste Audras, project manager @ Whodunit
  * Author URI:        http://jeanbaptisteaudras.com/
  * License:           GPL-2.0+
@@ -57,7 +50,7 @@ class TinyMCE_ABBR {
 		}
 		// Setup some filters
 		add_filter( 'mce_external_plugins', array( &$this, 'add_tinymce_abbr' ) );
-		add_filter( 'mce_buttons', array( &$this, 'add_tinymce_abbr_toolbar_button' ) );		
+		add_filter( 'mce_buttons_2', array( &$this, 'add_tinymce_abbr_toolbar_button' ) );		
 		}	
 
 		/**
