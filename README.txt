@@ -3,7 +3,7 @@ Contributors: audrasjb
 Tags: abbreviations,abbreviation,abréviations,abréviation,abbr,tinymce,wysiwyg,visual editor,accessibility,accessibilité,RGAA,section 501,wcag,Accessiweb,Opquast
 Requires at least: 4.0
 Tested up to: 4.6.1
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,9 @@ FR : Si la langue de l'abréviation est différente de la langue de la page cour
 2. the popup used to provide the meaning of your abbreviation and eventually it's language.
 
 == Changelog ==
+
+= 1.2.1 =
+* Minor corrections on french translation.
 
 = 1.2 =
 * Support lang HTML attribute. 

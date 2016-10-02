@@ -19,7 +19,7 @@
 				alert( 'Please select some text first.' );
 				return;
 			}
-			// Calls the pop-up modal
+			// Calls the pop-up modal dialog
 			editor.windowManager.open({
 				// Modal settings
 				title: 'Insert abbreviation',

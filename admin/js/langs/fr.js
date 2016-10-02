@@ -1,3 +1,4 @@
+// French translation for tinymce scripts
 tinymce.addI18n('fr',{
 "Insert abbreviation": "Insérer une abréviation",
 "Title": "Titre",
