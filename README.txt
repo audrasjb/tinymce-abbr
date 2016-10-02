@@ -1,7 +1,7 @@
 === Abbreviation button for TinyMCE ===
 Contributors: audrasjb
 Tags: abbreviations,abbreviation,abréviations,abréviation,abbr,tinymce,wysiwyg,visual editor,accessibility,accessibilité,RGAA,section 501,wcag,Accessiweb,Opquast
-Requires at least: 3.0
+Requires at least: 4.0
 Tested up to: 4.6.1
 Stable tag: 1.2
 License: GPLv2
