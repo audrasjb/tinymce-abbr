@@ -24,27 +24,29 @@
 				// Modal settings
 				title: 'Insert abbreviation',
 				id: 'tinymce-abbr-insert-dialog',
-				buttons: [
+				body: [
 					{
                    		type   : 'textbox',
-						id: 'tinymce-abbr-textbox',
+						id: 'tinymce-abbr-title',
 				   		name   : 'abbrTitle',
 				   		label  : 'Title',
 				   		tooltip: 'The meaning of your abbreviation',
                		},
-               		{
-						text: 'Ok',
-						id: 'tinymce-abbr-button-insert',
-						class: 'insert',
-						onclick: function(e) {
-							var text = editor.selection.getContent({
-								'format': 'html'
-							});
-							editor.execCommand('mceReplaceContent', false, '<abbr class="abbr" title="' + jQuery('#tinymce-abbr-textbox').val() + '">' + text + '</a>');
-							editor.windowManager.close();
-						},
-					},
-				],
+					{
+                   		type   : 'textbox',
+						id: 'tinymce-abbr-lang',
+				   		name   : 'abbrLang',
+				   		label  : 'Language',
+				   		tooltip: 'Only if the language is different from website language',
+               		},
+			   	],
+			   	onsubmit: function(e) {
+					var text = editor.selection.getContent({
+						'format': 'html'
+					});
+					editor.execCommand('mceReplaceContent', false, '<abbr class="abbr" title="' + jQuery('#tinymce-abbr-title').val() + '" lang="' + jQuery('#tinymce-abbr-lang').val() + '">' + text + '</abbr>');
+					editor.windowManager.close();
+				}
 			});
 		});
 	});
