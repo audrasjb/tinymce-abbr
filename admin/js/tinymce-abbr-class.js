@@ -36,8 +36,8 @@
                    		type   : 'textbox',
 						id: 'tinymce-abbr-lang',
 				   		name   : 'abbrLang',
-				   		label  : 'Language',
-				   		tooltip: 'Only if the language is different from website language',
+				   		label  : 'Language (optional)',
+				   		tooltip: 'Example: fr, en, de, etc. Use it only if the abbreviation’s language is different from page main language',
                		},
 			   	],
 			   	onsubmit: function(e) {
