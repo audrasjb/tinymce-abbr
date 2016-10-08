@@ -61,7 +61,6 @@ class TinyMCE_ABBR {
 		*/
 		function add_tinymce_abbr( $plugin_array ) {
 			$plugin_array['tinymce_abbr_class'] = plugin_dir_url( __FILE__ ) . 'admin/js/tinymce-abbr-class.js';
-			$plugin_array['tinymce_abbr_delete_class'] = plugin_dir_url( __FILE__ ) . 'admin/js/tinymce-abbr-delete-class.js';
 			return $plugin_array;
 		}
 
@@ -74,7 +73,6 @@ class TinyMCE_ABBR {
 		*/
 		function add_tinymce_abbr_toolbar_button( $buttons ) {
 			array_push( $buttons, 'tinymce_abbr_class' );
-			array_push( $buttons, 'tinymce_abbr_delete_class' );
 			return $buttons;
 		}
 	}
