@@ -36,7 +36,7 @@
 				var newTxt = document.createTextNode(text);
 				node.parentNode.replaceChild(newTxt, node);
 			} else {
-				// If this node is not an abbr, then call abbreviation modal dialog
+				// else, in means this node is not an abbr, then call abbreviation modal dialog
 				editor.windowManager.open({
 					// Modal settings
 					title: 'Insert abbreviation',
