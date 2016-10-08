@@ -18,13 +18,8 @@
 			}
 		});
 
-		// Called when we click the Insert abbreviation button
+		// Called when we click the abbreviation button
 		editor.addCommand( 'tinymce_abbr_modal', function() {
-		   	// class = mce-active
-		   	// aria-pressed = true
-			jQuery('#mce-wp-abbr').toggleClass('mce-active');
-			// Initialize abbrTitle var
-			var abbrTitle = '';
 			// Check we have selected some text that we want to link
 			var text = editor.selection.getContent({
 				'format': 'html'
