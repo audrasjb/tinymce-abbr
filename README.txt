@@ -50,6 +50,9 @@ FR : Si la langue de l'abréviation est différente de la langue de la page cour
 
 == Changelog ==
 
+= 1.3 =
+* Add/remove an abbreviation with one single button.
+
 = 1.2.1 =
 * Minor corrections on french translation.
 
