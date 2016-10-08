@@ -8,13 +8,15 @@
 			cmd: 'tinymce_abbr_modal'
 		});		
 
-		// Get current editor selection and toggle class on abbr tinymce button
+		// Get current editor selection and toggle class and aria-pressed attributes on abbr tinymce button
 		editor.on('NodeChange', function(e){
 			var node = editor.selection.getNode();
 			if (node.nodeName == 'ABBR') {
 				jQuery('#mce-wp-abbr').addClass('mce-active');
+				jQuery('#mce-wp-abbr').attr('aria-pressed', 'true')
 			} else {
 				jQuery('#mce-wp-abbr').removeClass('mce-active');
+				jQuery('#mce-wp-abbr').attr('aria-pressed', 'false')
 			}
 		});
 
