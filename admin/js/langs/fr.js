@@ -1,6 +1,6 @@
 // French translation for tinymce scripts
 tinymce.addI18n('fr',{
-"Insert abbreviation": "Insérer une abréviation",
+"Edit abbreviation": "Gestion des abréviations",
 "Title": "Titre",
 "The meaning of your abbreviation": "Intitulé complet de votre abréviation",
 "Language (optional)": "Langue (facultatif)",

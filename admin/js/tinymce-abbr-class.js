@@ -2,7 +2,7 @@
 	tinymce.PluginManager.add( 'tinymce_abbr_class', function( editor, url ) {
 		// Add Button to Visual Editor Toolbar
 		editor.addButton('tinymce_abbr_class', {
-			title: 'Insert abbreviation',
+			title: 'Edit abbreviation',
 			image: url + '/images/abbr-icon.png',
 			id: 'mce-wp-abbr',
 			cmd: 'tinymce_abbr_modal'
@@ -14,6 +14,7 @@
 			if (node.nodeName == 'ABBR') {
 				jQuery('#mce-wp-abbr').addClass('mce-active');
 				jQuery('#mce-wp-abbr').attr('aria-pressed', 'true')
+				console.log(editor.get('tinymce_abbr_class'));
 			} else {
 				jQuery('#mce-wp-abbr').removeClass('mce-active');
 				jQuery('#mce-wp-abbr').attr('aria-pressed', 'false')
