@@ -2,7 +2,7 @@
 	tinymce.PluginManager.add( 'tinymce_abbr_class', function( editor, url ) {
 		// Add Button to Visual Editor Toolbar
 		editor.addButton('tinymce_abbr_class', {
-			title: 'Edit abbreviation',
+			title: 'Abbreviation',
 			image: url + '/images/abbr-icon.png',
 			id: 'mce-wp-abbr',
 			cmd: 'tinymce_abbr_modal'
@@ -13,11 +13,10 @@
 			var node = editor.selection.getNode();
 			if (node.nodeName == 'ABBR') {
 				jQuery('#mce-wp-abbr').addClass('mce-active');
-				jQuery('#mce-wp-abbr').attr('aria-pressed', 'true')
-				console.log(editor.get('tinymce_abbr_class'));
+				jQuery('#mce-wp-abbr').attr('aria-pressed', 'true');
 			} else {
 				jQuery('#mce-wp-abbr').removeClass('mce-active');
-				jQuery('#mce-wp-abbr').attr('aria-pressed', 'false')
+				jQuery('#mce-wp-abbr').attr('aria-pressed', 'false');
 			}
 		});
 
@@ -28,7 +27,7 @@
 				'format': 'html'
 			});
 			if ( text.length === 0 ) {
-				alert( 'Please select some text first.' );
+				alert( 'Please select some text first' );
 				return;
 			}
 
