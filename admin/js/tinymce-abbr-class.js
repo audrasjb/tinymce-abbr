@@ -4,11 +4,25 @@
 		editor.addButton('tinymce_abbr_class', {
 			title: 'Insert abbreviation',
 			image: url + '/images/abbr-icon.png',
-			cmd: 'tinymce_abbr_modal',
+			id: 'mce-wp-abbr',
+			cmd: 'tinymce_abbr_modal'
 		});		
+
+		// Get current editor selection and toggle class on abbr tinymce button
+		editor.on('NodeChange', function(e){
+			var node = editor.selection.getNode();
+			if (node.nodeName == 'ABBR') {
+				jQuery('#mce-wp-abbr').addClass('mce-active');
+			} else {
+				jQuery('#mce-wp-abbr').removeClass('mce-active');
+			}
+		});
 
 		// Called when we click the Insert abbreviation button
 		editor.addCommand( 'tinymce_abbr_modal', function() {
+		   	// class = mce-active
+		   	// aria-pressed = true
+			jQuery('#mce-wp-abbr').toggleClass('mce-active');
 			// Initialize abbrTitle var
 			var abbrTitle = '';
 			// Check we have selected some text that we want to link
