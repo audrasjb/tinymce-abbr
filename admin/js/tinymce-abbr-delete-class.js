@@ -1,3 +1,4 @@
+/* no need !
 (function() {
 	tinymce.PluginManager.add( 'tinymce_abbr_delete_class', function( editor, url ) {
 		// Add Button to Visual Editor Toolbar
@@ -29,3 +30,4 @@
 		});
 	});
 })();
+*/
