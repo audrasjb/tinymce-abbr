@@ -27,7 +27,7 @@
 				'format': 'html'
 			});
 			if ( text.length === 0 ) {
-				alert( 'Please select some text first' );
+				alert( 'Please select some text' );
 				return;
 			}
 
