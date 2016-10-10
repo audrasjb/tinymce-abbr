@@ -5,7 +5,8 @@
 			title: 'Abbreviation',
 			image: url + '/images/abbr-icon.png',
 			id: 'mce-wp-abbr',
-			cmd: 'tinymce_abbr_modal'
+			cmd: 'tinymce_abbr_modal',
+			stateSelector: 'abbr'
 		});		
 
 		// Get current editor selection and toggle class and aria-pressed attributes on abbr tinymce button
@@ -35,8 +36,6 @@
 			var node = editor.selection.getNode();
 			if (node.nodeName == 'ABBR') {
 				// If ABBR is already present then remove it
-				//var newTxt = document.createTextNode(text);
-				//node.parentNode.replaceChild(newTxt, node);
 				editor.dom.remove(node, true);
 			} else {
 				// else, in means this node is not an abbr, then call abbreviation modal dialog
