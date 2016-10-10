@@ -5,8 +5,19 @@
 			title: 'Abbreviation',
 			image: url + '/images/abbr-icon.png',
 			id: 'mce-wp-abbr',
-			cmd: 'tinymce_abbr_modal',
-			stateSelector: 'abbr',
+			cmd: 'tinymce_abbr_modal'
+		});		
+
+		// Get current editor selection and toggle class and aria-pressed attributes on abbr tinymce button
+		editor.on('NodeChange', function(e){
+			var node = editor.selection.getNode();
+			if (node.nodeName == 'ABBR') {
+				jQuery('#mce-wp-abbr').addClass('mce-active');
+				jQuery('#mce-wp-abbr').attr('aria-pressed', 'true');
+			} else {
+				jQuery('#mce-wp-abbr').removeClass('mce-active');
+				jQuery('#mce-wp-abbr').attr('aria-pressed', 'false');
+			}
 		});
 
 		// Called when we click the abbreviation button
@@ -24,8 +35,9 @@
 			var node = editor.selection.getNode();
 			if (node.nodeName == 'ABBR') {
 				// If ABBR is already present then remove it
-				var newTxt = document.createTextNode(text);
-				node.parentNode.replaceChild(newTxt, node);
+				//var newTxt = document.createTextNode(text);
+				//node.parentNode.replaceChild(newTxt, node);
+				editor.dom.remove(node, true);
 			} else {
 				// else, in means this node is not an abbr, then call abbreviation modal dialog
 				editor.windowManager.open({
