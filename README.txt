@@ -51,7 +51,8 @@ FR : Si la langue de l'abréviation est différente de la langue de la page cour
 == Changelog ==
 
 = 1.3 =
-* Add/remove an abbreviation with one single button.
+* Add/remove an abbreviation with one single button, thanks to <a href="https://wabeo.fr/">Willy Bahuaud</a>.
+* Improvements on abbreviation node removing, based on <a href="https://www.linkedin.com/in/laurentolivares/fr">Laurent Olivares</a> rewiev.
 
 = 1.2.1 =
 * Minor corrections on french translation.
