@@ -3,7 +3,7 @@ Contributors: audrasjb
 Tags: abbreviations,abbreviation,abréviations,abréviation,abbr,tinymce,wysiwyg,visual editor,accessibility,accessibilité,RGAA,section 501,wcag,Accessiweb,Opquast
 Requires at least: 4.0
 Tested up to: 4.6.1
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -50,9 +50,12 @@ FR : Si la langue de l'abréviation est différente de la langue de la page cour
 
 == Changelog ==
 
+= 1.3.1 =
+* Fix a bug on the 1.3 single button, when you try to remove an abbr tag. Sorry.
+
 = 1.3 =
-* Add/remove an abbreviation with one single button, thanks to <a href="https://wabeo.fr/">Willy Bahuaud</a>.
-* Improvements on abbreviation node removing, based on <a href="https://www.linkedin.com/in/laurentolivares/fr">Laurent Olivares</a> rewiev.
+* Add/remove an abbreviation with one single button. Many thanks to <a href="https://wabeo.fr/">Willy Bahuaud</a> for helping.
+* Improvements on abbreviation node removing, based on <a href="https://www.linkedin.com/in/laurentolivares/fr">Laurent Olivares</a> review.
 
 = 1.2.1 =
 * Minor corrections on french translation.
