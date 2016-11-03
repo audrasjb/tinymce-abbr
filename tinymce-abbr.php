@@ -2,14 +2,14 @@
 
 /**
  * @link              http://jeanbaptisteaudras.com/tinymce-abbr/
- * @since             1.3.1
+ * @since             1.3.2
  * @package           Abbreviation button for TinyMCE
  *
  * @wordpress-plugin
  * Plugin Name:       Abbreviation button for TinyMCE
  * Plugin URI:        http://jeanbaptisteaudras.com/tinymce-abbr/
  * Description:       Provides abbreviations button for WordPress TinyMCE visual editor.
- * Version:           1.3.1
+ * Version:           1.3.2
  * Author:            Jean-Baptiste Audras, project manager @ Whodunit
  * Author URI:        http://jeanbaptisteaudras.com/
  * License:           GPL-2.0+
