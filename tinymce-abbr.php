@@ -78,7 +78,7 @@ class TinyMCE_ABBR {
 				'abbr_alert' 			=> __('Please select some text first', 'tinymce-abbr')
 			)
 		);
-		echo '<script>var abbrTranslations = ' . $translations . ';console.log(abbrTranslations);</script>';
+		echo '<script>var abbrTranslations = ' . $translations . ';</script>';
 	}
 
 	/**

@@ -2,7 +2,7 @@
 	tinymce.PluginManager.add( 'tinymce_abbr_class', function( editor, url ) {
 		// Add Button to Visual Editor Toolbar
 		editor.addButton('tinymce_abbr_class', {
-			title: 'Abbreviation',
+			title: abbrTranslations['abbr_add_button'],
 			image: url + '/images/abbr-icon.png',
 			id: 'mce-wp-abbr',
 			cmd: 'tinymce_abbr_modal',
@@ -28,7 +28,7 @@
 				'format': 'html'
 			});
 			if ( text.length === 0 ) {
-				alert( 'Please select some text' );
+				alert( abbrTranslations['abbr_alert'] );
 				return;
 			}
 
@@ -48,15 +48,15 @@
                    			type   : 'textbox',
 				   			id: 'tinymce-abbr-title',
 				   			name   : 'abbrTitle',
-				   			label  : 'Title',
-				   			tooltip: 'The meaning of your abbreviation',
+				   			label  : abbrTranslations['abbr_title_label'],
+				   			tooltip: abbrTranslations['abbr_title_help'],
                			},
 			   			{
                    			type   : 'textbox',
 				   			id: 'tinymce-abbr-lang',
 				   			name   : 'abbrLang',
-				   			label  : 'Language (optional)',
-				   			tooltip: 'Example: fr, en, de, etc. Use it only if the abbreviation’s language is different from page main language',
+				   			label  : abbrTranslations['abbr_lang_label'],
+				   			tooltip: abbrTranslations['abbr_lang_help'],
                			},
 			   		],
 			   		onsubmit: function(e) {
