@@ -45,7 +45,7 @@ If the abbreviation's language is different from your page main language, you ha
 == Changelog ==
 
 = 1.3.2 =
-* Official WordPress translation compatibility. You can now contribute to translate this plugin to your language <a href="https://translate.wordpress.org/">here</a> (contributors will be credited on the plugin's main page). Just go to your locale language and search Plugins > Abbreviation button for tinymce.
+* Official WordPress translation compatibility. You can now contribute to translate this plugin to your language <a href="https://translate.wordpress.org/">here</a>. Just go to your locale language and search Plugins > Abbreviation button for tinymce. Contributors will be credited on the plugin's main page.
 
 = 1.3.1 =
 * Fix a bug on the 1.3 single button, when you try to remove an abbr tag. Sorry.
