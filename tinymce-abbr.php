@@ -49,9 +49,10 @@ class TinyMCE_ABBR {
 			return;
 		}
 		// Setup filters
+		add_action( 'plugins_loaded', 'load_languages_tinymce_abbr' );
+		add_action( 'before_wp_tiny_mce', array( &$this, 'translate_tinymce_abbr' ) );
 		add_filter( 'mce_external_plugins', array( &$this, 'add_tinymce_abbr' ) );
 		add_filter( 'mce_buttons_2', array( &$this, 'add_tinymce_abbr_toolbar_button' ) );		
-		add_action( 'before_wp_tiny_mce', array( &$this, 'translate_tinymce_abbr' ) );
 	}	
 
 	/**
@@ -65,6 +66,15 @@ class TinyMCE_ABBR {
 		return $plugin_array;
 	}
 
+	/**
+	* Plugin's internationalization 
+	*	
+	* First load translation files
+	* Then add translation strings to a javascript variable
+	*/
+	function load_languages_tinymce_abbr() {
+	    load_plugin_textdomain( 'tinymce-abbr', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
+	}
 	// Adding i18n tinymce strings
 	function translate_tinymce_abbr() {
 		$translations = json_encode(
