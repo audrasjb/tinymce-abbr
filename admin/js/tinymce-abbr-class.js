@@ -63,7 +63,11 @@
 						var text = editor.selection.getContent({
 							'format': 'html'
 						});
-						editor.execCommand('mceReplaceContent', false, '<abbr class="abbr" title="' + jQuery('#tinymce-abbr-title').val() + '" lang="' + jQuery('#tinymce-abbr-lang').val() + '">' + text + '</abbr>');
+						if ( jQuery('#tinymce-abbr-lang').val() ) {
+							editor.execCommand('mceReplaceContent', false, '<abbr class="abbr" title="' + jQuery('#tinymce-abbr-title').val() + '" lang="' + jQuery('#tinymce-abbr-lang').val() + '">' + text + '</abbr>');
+						} else {
+							editor.execCommand('mceReplaceContent', false, '<abbr class="abbr" title="' + jQuery('#tinymce-abbr-title').val() + '">' + text + '</abbr>');
+						}
 						editor.windowManager.close();
 					}
 				});
