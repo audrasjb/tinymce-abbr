@@ -51,29 +51,46 @@ class TinyMCE_ABBR {
 		// Setup filters
 		add_filter( 'mce_external_plugins', array( &$this, 'add_tinymce_abbr' ) );
 		add_filter( 'mce_buttons_2', array( &$this, 'add_tinymce_abbr_toolbar_button' ) );		
-		}	
+		add_action( 'before_wp_tiny_mce', array( &$this, 'translate_tinymce_abbr' ) );
+	}	
 
-		/**
-		* Adds the plugin to the TinyMCE / Visual Editor instance
-		*	
-		* @param array $plugin_array Array of registered TinyMCE Plugins
-		* @return array Modified array of registered TinyMCE Plugins
-		*/
-		function add_tinymce_abbr( $plugin_array ) {
-			$plugin_array['tinymce_abbr_class'] = plugin_dir_url( __FILE__ ) . 'admin/js/tinymce-abbr-class.js';
-			return $plugin_array;
-		}
-
-		/**
-		* Adds a button to the TinyMCE / Visual Editor which the user can click
-		* to insert the abbr node tag.
-		*
-		* @param array $buttons Array of registered TinyMCE Buttons
-		* @return array Modified array of registered TinyMCE Buttons
-		*/
-		function add_tinymce_abbr_toolbar_button( $buttons ) {
-			array_push( $buttons, 'tinymce_abbr_class' );
-			return $buttons;
-		}
+	/**
+	* Adds the plugin to the TinyMCE / Visual Editor instance
+	*	
+	* @param array $plugin_array Array of registered TinyMCE Plugins
+	* @return array Modified array of registered TinyMCE Plugins
+	*/
+	function add_tinymce_abbr( $plugin_array ) {
+		$plugin_array['tinymce_abbr_class'] = plugin_dir_url( __FILE__ ) . 'admin/js/tinymce-abbr-class.js';
+		return $plugin_array;
 	}
+
+	// Adding i18n tinymce strings
+	function translate_tinymce_abbr() {
+		$translations = json_encode(
+			array( 
+				'abbr_add_button' 		=> __('Abbreviation', 'tinymce-abbr'),
+				'abbr_delete_button' 	=> __('Delete abbreviation', 'tinymce-abbr'),
+				'abbr_title_label' 		=> __('Title', 'tinymce-abbr'),
+				'abbr_title_help' 		=> __('The meaning of your abbreviation', 'tinymce-abbr'),
+				'abbr_lang_label'		=> __('Language (optional)', 'tinymce-abbr'),
+				'abbr_lang_help' 		=> __('Example: fr, en, de, etc. Use it only if the abbreviation’s language is different from page main language', 'tinymce-abbr'),
+				'abbr_alert' 			=> __('Please select some text first', 'tinymce-abbr')
+			)
+		);
+		echo '<script>var abbrTranslations = ' . $translations . ';console.log(abbrTranslations);</script>';
+	}
+
+	/**
+	* Adds a button to the TinyMCE / Visual Editor which the user can click
+	* to insert the abbr node tag.
+	*
+	* @param array $buttons Array of registered TinyMCE Buttons
+	* @return array Modified array of registered TinyMCE Buttons
+	*/
+	function add_tinymce_abbr_toolbar_button( $buttons ) {
+		array_push( $buttons, 'tinymce_abbr_class' );
+		return $buttons;
+	}
+}
 $TinyMCE_ABBR = new TinyMCE_ABBR;
