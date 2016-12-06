@@ -80,7 +80,6 @@ class TinyMCE_ABBR {
 		$translations = json_encode(
 			array( 
 				'abbr_add_button' 		=> __('Abbreviation', 'abbreviation-button-for-tinymce'),
-				'abbr_modal' 			=> __('Insert abbreviation', 'abbreviation-button-for-tinymce'),
 				'abbr_delete_button' 	=> __('Delete abbreviation', 'abbreviation-button-for-tinymce'),
 				'abbr_title_label' 		=> __('Title', 'abbreviation-button-for-tinymce'),
 				'abbr_title_help' 		=> __('The meaning of your abbreviation', 'abbreviation-button-for-tinymce'),

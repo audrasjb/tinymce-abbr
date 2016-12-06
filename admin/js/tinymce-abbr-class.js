@@ -41,7 +41,7 @@
 				// else, in means this node is not an abbr, then call abbreviation modal dialog
 				editor.windowManager.open({
 					// Modal settings
-					title: abbrTranslations['abbr_modal'],
+					title: abbrTranslations['abbr_add_button'],
 					id: 'tinymce-abbr-insert-dialog',
 					body: [
 						{
