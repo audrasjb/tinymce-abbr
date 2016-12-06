@@ -3,7 +3,7 @@ Contributors: audrasjb
 Tags: abbreviations,abbreviation,abréviations,abréviation,abbr,tinymce,wysiwyg,visual editor,accessibility,accessibilité,RGAA,section 501,wcag,Accessiweb,Opquast
 Requires at least: 4.0
 Tested up to: 4.6.1
-Stable tag: 1.3.2
+Stable tag: 1.3.4
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,8 +14,10 @@ Provides abbreviation button for WordPress TinyMCE visual editor.
 This plugin should be used to supply abbreviation support in the TinyMCE visual editor. Once activated, it provides an "ABR" button which allows editor to indicate the meaning of each abbreviation used in Pages, Posts or any custom post types used in your WordPress installation. The markup is fully compatible with accessibility rules like Web Content Accessibility Guidelines (WCAG). It uses `<abbr>…</abbr>` HTML markup instead of the deprecated `<acronym>…</acronym>` HTML markup.
 
 **Available languages**
-* English
-* French
+English
+French
+…add your own language pack: contribute <a href="https://translate.wordpress.org/">here</a>! Contributors will be credited.
+Search Plugins > Abbreviation button for tinymce and add your translations. Many strings are commented to help you to understand context.
 
 **Credits**
 
@@ -40,12 +42,19 @@ If the abbreviation's language is different from your page main language, you ha
 == Screenshots ==
 
 1. the 'ABR' button in your TinyMCE visual editor (second line of buttons).
-2. the popup used to provide the meaning of your abbreviation and eventually it's language.
+2. the popup used to give the meaning of your abbreviation and optionally it's language.
 
 == Changelog ==
 
+= 1.3.4 =
+* Better use of lang attribute: we don't need to show this attribute if empty.
+* Small fixes on internationalization.
+
+= 1.3.3 =
+* Add french (fr_FR) translation to 1.3.
+
 = 1.3.2 =
-* Official WordPress translation compatibility. You can now contribute to translate this plugin to your language <a href="https://translate.wordpress.org/">here</a>. Just go to your locale language and search Plugins > Abbreviation button for tinymce. Contributors will be credited on the plugin's main page.
+* Official WordPress translation compatibility. You can now contribute to translate this plugin to your language <a href="https://translate.wordpress.org/">here</a>. Just go to your locale language and search Plugins > Abbreviation button for tinymce. Contributors will be credited on the plugin's main page ;)
 
 = 1.3.1 =
 * Fix a bug on the 1.3 single button, when you try to remove an abbr tag. Sorry.

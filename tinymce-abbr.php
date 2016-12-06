@@ -2,19 +2,19 @@
 
 /**
  * @link              http://jeanbaptisteaudras.com/tinymce-abbr/
- * @since             1.3.2
+ * @since             1.3.4
  * @package           Abbreviation button for TinyMCE
  *
  * @wordpress-plugin
  * Plugin Name:       Abbreviation button for TinyMCE
  * Plugin URI:        http://jeanbaptisteaudras.com/tinymce-abbr/
  * Description:       Provides abbreviations button for WordPress TinyMCE visual editor.
- * Version:           1.3.2
+ * Version:           1.3.4
  * Author:            Jean-Baptiste Audras, project manager @ Whodunit
  * Author URI:        http://jeanbaptisteaudras.com/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       tinymce-abbr
+ * Text Domain:       abbreviation-button-for-tinymce
  * Domain Path:       /languages
  */
 
@@ -73,19 +73,20 @@ class TinyMCE_ABBR {
 	* Then add translation strings to a javascript variable
 	*/
 	function load_languages_tinymce_abbr() {
-	    load_plugin_textdomain( 'tinymce-abbr', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
+	    load_plugin_textdomain( 'abbreviation-button-for-tinymce', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' ); 
 	}
 	// Adding i18n tinymce strings
 	function translate_tinymce_abbr() {
 		$translations = json_encode(
 			array( 
-				'abbr_add_button' 		=> __('Abbreviation', 'tinymce-abbr'),
-				'abbr_delete_button' 	=> __('Delete abbreviation', 'tinymce-abbr'),
-				'abbr_title_label' 		=> __('Title', 'tinymce-abbr'),
-				'abbr_title_help' 		=> __('The meaning of your abbreviation', 'tinymce-abbr'),
-				'abbr_lang_label'		=> __('Language (optional)', 'tinymce-abbr'),
-				'abbr_lang_help' 		=> __('Example: fr, en, de, etc. Use it only if the abbreviation’s language is different from page main language', 'tinymce-abbr'),
-				'abbr_alert' 			=> __('Please select some text first', 'tinymce-abbr')
+				'abbr_add_button' 		=> __('Abbreviation', 'abbreviation-button-for-tinymce'),
+				'abbr_modal' 			=> __('Insert abbreviation', 'abbreviation-button-for-tinymce'),
+				'abbr_delete_button' 	=> __('Delete abbreviation', 'abbreviation-button-for-tinymce'),
+				'abbr_title_label' 		=> __('Title', 'abbreviation-button-for-tinymce'),
+				'abbr_title_help' 		=> __('The meaning of your abbreviation', 'abbreviation-button-for-tinymce'),
+				'abbr_lang_label'		=> __('Language (optional)', 'abbreviation-button-for-tinymce'),
+				'abbr_lang_help' 		=> __('Example: fr, en, de, etc. Use it only if the abbreviation’s language is different from page main language', 'abbreviation-button-for-tinymce'),
+				'abbr_alert' 			=> __('Please select some text first', 'abbreviation-button-for-tinymce')
 			)
 		);
 		echo '<script>var abbrTranslations = ' . $translations . ';</script>';

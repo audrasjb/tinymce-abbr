@@ -41,7 +41,7 @@
 				// else, in means this node is not an abbr, then call abbreviation modal dialog
 				editor.windowManager.open({
 					// Modal settings
-					title: 'Insert abbreviation',
+					title: abbrTranslations['abbr_modal'],
 					id: 'tinymce-abbr-insert-dialog',
 					body: [
 						{
@@ -68,6 +68,7 @@
 						} else {
 							editor.execCommand('mceReplaceContent', false, '<abbr class="abbr" title="' + jQuery('#tinymce-abbr-title').val() + '">' + text + '</abbr>');
 						}
+						editor.windowManager.close();
 						editor.windowManager.close();
 					}
 				});

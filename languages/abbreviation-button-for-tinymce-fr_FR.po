@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Abbreviation button for TinyMCE\n"
+"POT-Creation-Date: 2016-11-11 11:36+0100\n"
+"PO-Revision-Date: 2016-11-11 11:43+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: tinymce-abbr.php\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+# Title for the button on the visual editor
+#: tinymce-abbr.php:82
+msgid "Abbreviation"
+msgstr "Abréviation"
+
+# Title of the modal popup
+#: tinymce-abbr.php:83
+msgid "Insert abbreviation"
+msgstr "Insérer une abréviation"
+
+# Title of the button when you are hovering an existing abbreviation
+#: tinymce-abbr.php:84
+msgid "Delete abbreviation"
+msgstr "Supprimer l’abréviation"
+
+# 'title' field in the modal popup
+#: tinymce-abbr.php:85
+msgid "Title"
+msgstr "Titre"
+
+# 'title' help in the modal popup
+#: tinymce-abbr.php:86
+msgid "The meaning of your abbreviation"
+msgstr "Indiquer la signification de l’abréviation"
+
+# 'language' field in the modal popup
+#: tinymce-abbr.php:87
+msgid "Language (optional)"
+msgstr "Langue (facultatif)"
+
+# 'language' field help  in the modal popup
+#: tinymce-abbr.php:88
+msgid ""
+"Example: fr, en, de, etc. Use it only if the abbreviation’s language is "
+"different from page main language"
+msgstr ""
+"Par exemple : fr, en, de, etc. A n’utiliser que si la langue de "
+"l'abréviation est différente de la langue globale de la page"
+
+# Javascript alert if you haven't selected any text
+#: tinymce-abbr.php:89
+msgid "Please select some text first"
+msgstr "Veuillez sélectionner du texte d'abord"
+
+# Name of the plugin: please DO NOT TRANSLATE THIS :)
+#. Plugin Name of the plugin/theme
+msgid "Abbreviation button for TinyMCE"
+msgstr "Abbreviation button for TinyMCE"
+
+# PLEASE DO NOT TRANSLATE THIS :)
+#. Plugin URI of the plugin/theme
+msgid "http://jeanbaptisteaudras.com/tinymce-abbr/"
+msgstr "http://jeanbaptisteaudras.com/tinymce-abbr/"
+
+# Description of the plugin in the WordPress Plugin Repo. You can tanslate it in your language :)
+#. Description of the plugin/theme
+msgid "Provides abbreviations button for WordPress TinyMCE visual editor."
+msgstr ""
+"Fournit un bouton de gestion des abréviations pour l’éditeur visuel "
+"TinyMCE."
+
+#. Author of the plugin/theme
+msgid "Jean-Baptiste Audras, project manager @ Whodunit"
+msgstr "Jean-Baptiste Audras, chef de projets chez Whodunit"
+
+#. Author URI of the plugin/theme
+msgid "http://jeanbaptisteaudras.com/"
+msgstr "http://jeanbaptisteaudras.com/"
