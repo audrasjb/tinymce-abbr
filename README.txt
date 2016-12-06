@@ -14,9 +14,9 @@ Provides abbreviation button for WordPress TinyMCE visual editor.
 This plugin should be used to supply abbreviation support in the TinyMCE visual editor. Once activated, it provides an "ABR" button which allows editor to indicate the meaning of each abbreviation used in Pages, Posts or any custom post types used in your WordPress installation. The markup is fully compatible with accessibility rules like Web Content Accessibility Guidelines (WCAG). It uses `<abbr>…</abbr>` HTML markup instead of the deprecated `<acronym>…</acronym>` HTML markup.
 
 **Available languages**
-English
-French
-…add your own language pack: contribute <a href="https://translate.wordpress.org/">here</a>! Contributors will be credited.
+* English
+* French
+You can add your own language pack: contribute <a href="https://translate.wordpress.org/">here</a>! Contributors will be linked back here.
 Search Plugins > Abbreviation button for tinymce and add your translations. Many strings are commented to help you to understand context.
 
 **Credits**
@@ -45,6 +45,10 @@ If the abbreviation's language is different from your page main language, you ha
 2. the popup used to give the meaning of your abbreviation and optionally it's language.
 
 == Changelog ==
+
+= 1.3.5 =
+* Check WordPress 4.7 support (it works fine!)
+* Better internationalization support
 
 = 1.3.4 =
 * Better use of lang attribute: we don't need to show this attribute if empty.
